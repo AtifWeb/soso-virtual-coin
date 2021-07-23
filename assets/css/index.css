@@ -1,6 +1,7 @@
 .hero-wrapper {
   height: 700px;
   width: 100%;
+  background-color: var(--primaryColor);
   background: url(../img/bannerslider.jpg);
   background-position: top;
   background-size: 140%;
