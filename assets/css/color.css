@@ -1,0 +1,13 @@
+:root {
+  --primaryColor: #021333;
+  --secondaryColor: #061e4a;
+  --MainFrontPresentation: #f9be30;
+  --OrangeColor: linear-gradient(
+    to bottom,
+    rgba(223, 144, 61, 1) 0%,
+    rgba(238, 172, 103, 1) 50%,
+    rgba(223, 144, 61, 1) 100%
+  );
+  --headerbgColor: #000e3bc2;
+  --blue-button: rgb(11, 99, 148);
+}

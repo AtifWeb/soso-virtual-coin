@@ -1,0 +1,129 @@
+.hero-wrapper {
+  height: 700px;
+  width: 100%;
+  background: url(../img/bannerslider.jpg);
+  background-position: top;
+  background-size: 140%;
+  padding-top: 5rem;
+  color: #fff;
+}
+.hero-content {
+  height: 100%;
+
+  justify-content: flex-end;
+}
+.hero-content .presentation {
+  width: 60%;
+  text-align: center;
+}
+.hero-content .presentation h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.hero-content .presentation h1 span {
+  font-weight: 400;
+  display: block;
+}
+.hero-content .presentation p {
+  font-size: 1.3rem;
+}
+.hero-content .presentation .button {
+  padding: 1.3rem 1rem;
+  background: rebeccapurple;
+  display: inline-block;
+  margin-top: 2rem;
+  width: 240px;
+  border-radius: 99px;
+  background: rgb(255, 150, 22);
+  color: #4a3306;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* investment-plans */
+.investment-plans {
+  background: var(--primaryColor);
+  padding: 5rem 0rem;
+}
+.investment-plans .investement-plan-content h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+.cards-area {
+  margin-top: 3rem;
+  grid-gap: 1rem;
+}
+.cards-area .card {
+  background: var(--secondaryColor);
+  padding: 1.5rem 2rem;
+  flex-direction: column;
+  border-radius: 20px;
+  position: relative;
+}
+.cards-area .card .top-area {
+  margin-bottom: 1.5rem;
+}
+.cards-area .card .top-area p {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.cards-area .card .plan-area {
+  width: 100%;
+}
+.cards-area .card .plan-area > button {
+  width: 80%;
+  margin: 0rem auto;
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(246, 109, 31, 1) 0%,
+    rgba(250, 184, 72, 1) 50%,
+    rgba(246, 109, 31, 1) 100%
+  );
+
+  padding: 0.7rem 0.3rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 99px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.cards-area .card .plan-area > button:last-child {
+  margin-top: 10px;
+}
+.cards-area .card ul {
+  text-align: center;
+  margin-top: 4rem;
+  color: #fff;
+}
+.cards-area .card:last-child > .top-area img {
+  height: 90px;
+}
+.cards-area .card ul li {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cards-area .card ul li + li {
+  margin-top: 0.4rem;
+}
+
+.cards-area .register-button {
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 188, 77, 1) 0%,
+    rgba(233, 163, 34, 1) 100%
+  );
+  padding: 0.7rem 0.3rem;
+  width: 70%;
+  text-align: center;
+  border-radius: 99px;
+  position: absolute;
+  top: 98%;
+}
