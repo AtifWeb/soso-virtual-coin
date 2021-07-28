@@ -99,3 +99,8 @@ header .header-content nav li:last-child {
   margin-left: 10px;
   /* background: var(--GreenColor); */
 }
+@media screen and (max-width: 1230px) {
+  .w-1200 {
+    width: 90%;
+  }
+}
