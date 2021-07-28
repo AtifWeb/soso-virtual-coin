@@ -153,7 +153,9 @@
   padding: 7rem 0rem;
 }
 .get-started h1,
-.investment-features h1 {
+.investment-features h1,
+.investment-features .investment-features-content > h1,
+.video-container .content h1 {
   font-size: 2.2rem;
   color: var(--Boldtextcolor);
 }
@@ -189,9 +191,7 @@
 .investment-features .investment-features-content {
   grid-template-columns: 1fr 1fr 1fr;
 }
-.investment-features .investment-features-content > h1 {
-  font-size: 2.2rem;
-}
+
 .investment-features .investment-features-content .card {
   text-align: center;
   padding: 3rem 1.5rem;
@@ -199,4 +199,16 @@
 .investment-features .investment-features-content .card img {
   width: 25%;
   margin-bottom: 1rem;
+}
+
+/* youtube-video-container */
+.video-container .content {
+  padding: 7rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.video-container .content h1 {
+  margin-bottom: 3rem;
 }
