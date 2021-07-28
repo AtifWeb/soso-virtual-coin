@@ -1,0 +1,79 @@
+.login-area {
+  background: var(--primaryColor);
+}
+.login-area .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 100vh;
+  grid-gap: 2rem;
+  padding: 2rem 0rem;
+}
+.login-area .content h1 {
+  font-size: 2.2rem;
+  color: var(--Boldtextcolor);
+}
+.login-area .content p {
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+.login-area .content .form-area {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0rem auto;
+}
+.login-area .content .form-area form h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--Boldtextcolor);
+  margin-bottom: 8px;
+}
+.login-area .content .form-area form small a {
+  color: var(--GreenColor);
+  font-weight: 600;
+}
+.login-area .content .form-area form .input-container {
+  margin-top: 2rem;
+}
+.login-area .content .form-area form .input-container .input-wrapper + div {
+  margin-top: 1rem;
+}
+.login-area .content .form-area form .input-container .input-wrapper input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ddd;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  outline: none;
+  padding: 0rem 1rem;
+}
+.login-area .content .form-area form .input-container .input-wrapper label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Boldtextcolor);
+}
+.login-area .content .form-area form .submit-wrapper label {
+  width: 100%;
+  height: 45px;
+  display: block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  background-color: var(--GreenColor);
+  margin-top: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-area .content .form-area form .forget-password {
+  color: var(--GreenColor);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 1rem;
+  display: inline-block;
+}
