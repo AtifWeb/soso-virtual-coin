@@ -86,10 +86,14 @@
 .cards-area .card .top-area {
   margin-bottom: 1.5rem;
   padding: 0rem 2rem;
+  color: var(--Boldtextcolor);
 }
 .cards-area .card .top-area p {
   font-size: 2.5rem;
-  color: var(--Boldtextcolor);
+}
+.cards-area .card .top-area i {
+  font-size: 2.5rem;
+  margin-right: 10px;
 }
 .cards-area .card .plan-area {
   width: 100%;
@@ -99,12 +103,7 @@
   width: 80%;
   margin: 0rem auto;
   display: block;
-  background: linear-gradient(
-    to right,
-    rgba(246, 109, 31, 1) 0%,
-    rgba(250, 184, 72, 1) 50%,
-    rgba(246, 109, 31, 1) 100%
-  );
+  background: var(--GreenColor);
 
   padding: 0.7rem 0.3rem;
   border: none;
@@ -137,12 +136,7 @@
 }
 
 .cards-area .register-button {
-  background: linear-gradient(
-    to right,
-    rgba(246, 109, 31, 1) 0%,
-    rgba(250, 184, 72, 1) 50%,
-    rgba(246, 109, 31, 1) 100%
-  );
+  background: var(--GreenColor);
   width: 100%;
   padding: 0.7rem 0.3rem;
 
