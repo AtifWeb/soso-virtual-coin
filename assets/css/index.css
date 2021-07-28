@@ -57,12 +57,24 @@
   text-align: center;
 }
 
+/* welcome-area */
+.welcome-area {
+  padding: 7rem 0rem;
+}
+.welcome-area p {
+  line-height: 2rem;
+  margin-top: 1.5rem;
+}
+.welcome-area h1 span {
+  font-weight: bold;
+}
 /* investment-plans */
 .investment-plans {
   background: var(--primaryColor);
   padding: 7rem 0rem;
 }
-.investment-plans .investement-plan-content h1 {
+.investment-plans .investement-plan-content h1,
+.welcome-area h1 {
   font-size: 2.6rem;
   text-align: center;
   /* color: #fff; */
