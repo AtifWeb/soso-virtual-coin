@@ -60,7 +60,7 @@
 /* investment-plans */
 .investment-plans {
   background: var(--primaryColor);
-  padding: 5rem 0rem;
+  padding: 7rem 0rem;
 }
 .investment-plans .investement-plan-content h1 {
   font-size: 2.6rem;
@@ -150,35 +150,53 @@
 
 /* get-started */
 .get-started {
-  padding: 4rem 0rem;
+  padding: 7rem 0rem;
 }
-.get-started h1 {
-  font-size: 3rem;
+.get-started h1,
+.investment-features h1 {
+  font-size: 2.2rem;
   color: var(--Boldtextcolor);
 }
-.get-started .boxes {
+.get-started .boxes,
+.investment-features .investment-features-content .cards-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .get-started .boxes .box {
   padding: 1.5rem;
   border: 2px solid var(--Boldtextcolor);
   border-radius: 20px;
 }
-.get-started .boxes .box h2 {
+.get-started .boxes .box h2,
+.investment-features .investment-features-content h3 {
   font-size: 1.3rem;
   color: var(--Boldtextcolor);
   margin-bottom: 0.5rem;
 }
-.get-started .boxes .box p {
+.get-started .boxes .box p,
+.investment-features .investment-features-content p {
   line-height: 2rem;
   color: rgb(104, 119, 141);
 }
 
 /* investment-features */
 .investment-features {
-  padding: 4rem 0rem;
+  padding: 7rem 0rem;
   background: var(--primaryColor);
+}
+.investment-features .investment-features-content {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.investment-features .investment-features-content > h1 {
+  font-size: 2.2rem;
+}
+.investment-features .investment-features-content .card {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+.investment-features .investment-features-content .card img {
+  width: 25%;
+  margin-bottom: 1rem;
 }
