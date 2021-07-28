@@ -76,7 +76,7 @@
 .cards-area .card {
   /* background: var(--secondaryColor); */
   background: #fff;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   padding-bottom: 0px;
   box-shadow: 0px 0px 10px rgba(197, 197, 197, 0.5);
   flex-direction: column;
@@ -146,4 +146,39 @@
   margin-top: 1rem;
   /* position: absolute; */
   /* top: 98%; */
+}
+
+/* get-started */
+.get-started {
+  padding: 4rem 0rem;
+}
+.get-started h1 {
+  font-size: 3rem;
+  color: var(--Boldtextcolor);
+}
+.get-started .boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+.get-started .boxes .box {
+  padding: 1.5rem;
+  border: 2px solid var(--Boldtextcolor);
+  border-radius: 20px;
+}
+.get-started .boxes .box h2 {
+  font-size: 1.3rem;
+  color: var(--Boldtextcolor);
+  margin-bottom: 0.5rem;
+}
+.get-started .boxes .box p {
+  line-height: 2rem;
+  color: rgb(104, 119, 141);
+}
+
+/* investment-features */
+.investment-features {
+  padding: 4rem 0rem;
+  background: var(--primaryColor);
 }
