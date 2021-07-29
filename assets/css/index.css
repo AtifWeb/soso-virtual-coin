@@ -4,7 +4,7 @@
   background-color: var(--primaryColor);
   background: url(https://images.prismic.io/uphold/fdd83ea3-be11-48bf-8b13-f15f5eab371d_woman-phone-coffe.webp?auto=compress,format);
   background-position: top;
-  background-size: 140%;
+  background-size: cover;
   padding-top: 5rem;
   color: #fff;
   position: relative;
@@ -25,16 +25,12 @@
   width: 60%;
   position: relative;
   z-index: 2;
-  /* text-align: center; */
 }
 .hero-content .presentation h1 {
   margin-bottom: 2rem;
   font-size: 4rem;
 }
-.hero-content .presentation h1 span {
-  /* font-weight: 400; */
-  /* display: block; */
-}
+
 .hero-content .presentation p {
   font-size: 1.3rem;
   line-height: 2.4rem;
@@ -75,7 +71,7 @@
 .welcome-area h1 {
   font-size: 2.6rem;
   text-align: center;
-  /* color: #fff; */
+
   color: var(--Boldtextcolor);
   font-weight: 400;
 }
@@ -87,7 +83,6 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .cards-area .card {
-  /* background: var(--secondaryColor); */
   background: #fff;
   padding-top: 2rem;
   padding-bottom: 0px;
@@ -157,8 +152,6 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-top: 1rem;
-  /* position: absolute; */
-  /* top: 98%; */
 }
 
 /* get-started */
@@ -243,4 +236,124 @@
 }
 .accepted-payment .coins-area > div {
   text-align: center;
+}
+
+/* youtube */
+@media screen and (max-width: 1150px) {
+  #youtube-video-wrapper,
+  iframe {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero-content .presentation {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-content .presentation h1 {
+    font-size: 3rem;
+  }
+  .cards-area {
+    grid-gap: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cards-area {
+    grid-template-columns: 1fr 1fr;
+  }
+  .investment-plans .investement-plan-content h1,
+  .welcome-area h1,
+  .get-started h1,
+  .investment-features h1,
+  .investment-features .investment-features-content > h1,
+  .video-container .content h1,
+  .accepted-payment h1 {
+    font-size: 2rem;
+  }
+  .welcome-area p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-content .presentation h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content .presentation p {
+    font-size: 1.1rem;
+  }
+  .investment-plans .investement-plan-content h1,
+  .welcome-area h1,
+  .get-started h1,
+  .investment-features h1,
+  .investment-features .investment-features-content > h1,
+  .video-container .content h1,
+  .accepted-payment h1 {
+    font-size: 1.8rem;
+  }
+
+  .cards-area,
+  .get-started .boxes,
+  .investment-features .investment-features-content .cards-area,
+  .accepted-payment .coins-area {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-content .presentation h1 {
+    font-size: 2rem;
+  }
+  .hero-content .presentation p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+  }
+  .hero-content .presentation .button {
+    padding: 1rem 1rem;
+    font-size: 14px;
+  }
+  .investment-plans .investement-plan-content h1,
+  .welcome-area h1,
+  .get-started h1,
+  .investment-features h1,
+  .investment-features .investment-features-content > h1,
+  .video-container .content h1,
+  .accepted-payment h1 {
+    font-size: 1.5rem;
+  }
+  .get-started .boxes .box h2,
+  .investment-features .investment-features-content h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .hero-content .presentation h1 {
+    font-size: 1.6rem;
+  }
+  .hero-content .presentation .button {
+    font-size: 12px;
+    padding: 1rem 1rem !important;
+    width: 190px;
+  }
+  .investment-plans .investement-plan-content h1,
+  .welcome-area h1,
+  .get-started h1,
+  .investment-features h1,
+  .investment-features .investment-features-content > h1,
+  .video-container .content h1,
+  .accepted-payment h1 {
+    font-size: 1.4rem;
+  }
+  .hero-content .presentation p,
+  .welcome-area p,
+  .get-started .boxes .box p,
+  .investment-features .investment-features-content p,
+  .accepted-payment .coins-area p {
+    font-size: 0.9rem;
+  }
+  .get-started .boxes .box h2,
+  .investment-features .investment-features-content h3 {
+    font-size: 1.1rem;
+  }
+  .video-container h1 {
+    text-align: center;
+  }
 }
