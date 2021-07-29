@@ -258,6 +258,9 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .hero-wrapper {
+    height: 550px;
+  }
   .cards-area {
     grid-template-columns: 1fr 1fr;
   }
