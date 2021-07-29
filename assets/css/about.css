@@ -1,0 +1,84 @@
+.hero-wrapper {
+  height: 450px;
+  width: 100%;
+  background-color: var(--headerbgColor);
+  padding-top: 5rem;
+  color: #fff;
+  position: relative;
+}
+.hero-content {
+  height: 100%;
+  justify-content: center;
+}
+.hero-content .presentation {
+  text-align: center;
+}
+.hero-content .presentation h1 {
+  font-size: 3.5rem;
+}
+.hero-content .presentation p {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+/* question-area */
+.welcome-section {
+  padding: 4rem 0rem;
+  background-color: var(--primaryColor);
+}
+.welcome-section .content p {
+  margin-bottom: 0.4rem;
+}
+.welcome-section .content h1 {
+  font-size: 2rem;
+  color: var(--Boldtextcolor);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.welcome-section p {
+  line-height: 2rem;
+  width: 70%;
+  color: rgb(104, 119, 141);
+  font-size: 16px;
+}
+@media screen and (max-width: 800px) {
+  .welcome-section p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-content .presentation h1 {
+    font-size: 3rem;
+  }
+  .hero-content .presentation p {
+    font-size: 18px;
+  }
+  .welcome-section .content h1 {
+    font-size: 1.6rem;
+  }
+  .welcome-section .content p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .welcome-section .content h1 {
+    text-align: center;
+  }
+  .welcome-section .content p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .hero-content .presentation h1 {
+    font-size: 2.3rem;
+  }
+  .hero-content .presentation p {
+    font-size: 15px;
+  }
+  .welcome-section .content h1 {
+    font-size: 1.4rem;
+  }
+}

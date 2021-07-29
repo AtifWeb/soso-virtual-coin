@@ -1,0 +1,107 @@
+.hero-wrapper {
+  height: 450px;
+  width: 100%;
+  background-color: var(--headerbgColor);
+  padding-top: 5rem;
+  color: #fff;
+  position: relative;
+}
+.hero-content {
+  height: 100%;
+  justify-content: center;
+}
+.hero-content .presentation {
+  text-align: center;
+}
+.hero-content .presentation h1 {
+  font-size: 3.5rem;
+}
+.hero-content .presentation p {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+/* question-area */
+.question-area {
+  padding: 4rem 0rem;
+  background-color: var(--primaryColor);
+}
+.question-area .content h1 {
+  font-size: 2rem;
+  color: var(--Boldtextcolor);
+  font-weight: 700;
+}
+
+.question-area .content .question-boxes {
+  margin-top: 2rem;
+  width: 70%;
+}
+.question-area .content .question-boxes .question-box {
+  background: #fff;
+
+  border-radius: 15px;
+}
+.question-area .content .question-boxes .question-box .head {
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1.2rem 1.5rem;
+}
+.question-area .content .question-boxes .question-box .head > * {
+  pointer-events: none;
+}
+.question-area .content .question-boxes .question-box .head i {
+  margin-bottom: 6px;
+  color: var(--headerbgColor);
+  transition: 0.4s ease all;
+}
+.question-area .content .question-boxes .question-box .head.active i {
+  transform: rotate(180deg);
+}
+.question-area .content .question-boxes .question-box .body {
+  padding: 0rem 1.5rem;
+  padding-bottom: 1.2rem;
+  display: none;
+}
+.question-area .content .question-boxes .question-box .body.active {
+  display: block;
+}
+.question-area .content .question-boxes .question-box .body p {
+  line-height: 1.8rem;
+  color: rgb(104, 119, 141);
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .question-area .content .question-boxes {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-content .presentation h1 {
+    font-size: 3rem;
+  }
+  .hero-content .presentation p {
+    font-size: 18px;
+  }
+  .question-area .content h1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .question-area .content h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  .hero-content .presentation h1 {
+    font-size: 2.3rem;
+  }
+  .hero-content .presentation p {
+    font-size: 15px;
+  }
+  .question-area .content h1 {
+    font-size: 1.4rem;
+  }
+  .question-area .content .head p {
+    font-size: 14px;
+  }
+}

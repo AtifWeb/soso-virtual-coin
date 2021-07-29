@@ -19,7 +19,9 @@ ul {
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+.burger-icon {
+  display: none;
+}
 .dflex,
 .dflex-align-center,
 .dflex-justify-center {
@@ -99,8 +101,76 @@ header .header-content nav li:last-child {
   margin-left: 10px;
   /* background: var(--GreenColor); */
 }
+footer {
+  background: var(--headerbgColor);
+  padding: 2rem 0rem;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+}
+footer .footer-content nav {
+  display: flex;
+  align-items: center;
+}
+footer .footer-content p {
+  font-size: 13px;
+}
+footer .footer-content nav li {
+  font-size: 13px;
+  font-weight: 700;
+}
+footer .footer-content nav li + li {
+  margin-left: 1rem;
+}
+
 @media screen and (max-width: 1230px) {
   .w-1200 {
     width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .burger-icon {
+    display: block;
+  }
+
+  header .header-content nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: var(--headerbgColor);
+    top: 100%;
+    padding: 1.5rem 6%;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.4s ease all;
+    top: -300px;
+  }
+  header .header-content nav.active {
+    top: 4rem;
+  }
+  header .header-content nav > * + * {
+    margin-left: 0rem !important;
+    margin-top: 1rem;
+  }
+  header .header-content nav > li {
+    display: block;
+    width: 100%;
+  }
+  header .header-content nav > li a {
+    display: block;
+  }
+  header .header-content nav li.auth-button {
+    border-radius: 5px;
+  }
+  footer .footer-content nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer .footer-content {
+    text-align: center;
   }
 }

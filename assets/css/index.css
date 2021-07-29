@@ -20,8 +20,6 @@
 }
 .hero-content {
   height: 100%;
-
-  /* justify-content: flex-end; */
 }
 .hero-content .presentation {
   width: 60%;
@@ -83,7 +81,10 @@
 }
 .cards-area {
   margin-top: 3rem;
-  grid-gap: 1rem;
+
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .cards-area .card {
   /* background: var(--secondaryColor); */
@@ -242,29 +243,4 @@
 }
 .accepted-payment .coins-area > div {
   text-align: center;
-}
-
-footer {
-  background: var(--headerbgColor);
-  padding: 2rem 0rem;
-}
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  align-items: center;
-}
-footer .footer-content nav {
-  display: flex;
-  align-items: center;
-}
-footer .footer-content p {
-  font-size: 13px;
-}
-footer .footer-content nav li {
-  font-size: 13px;
-  font-weight: 700;
-}
-footer .footer-content nav li + li {
-  margin-left: 1rem;
 }
