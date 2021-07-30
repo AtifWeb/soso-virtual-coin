@@ -37,8 +37,27 @@
 .login-area .content .form-area form .input-container {
   margin-top: 2rem;
 }
+.register-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.register-input-container > *:nth-child(3),
+.register-input-container > *:nth-child(6),
+.register-input-container > *:nth-child(7) {
+  grid-column: span 2;
+}
 .login-area .content .form-area form .input-container .input-wrapper + div {
   margin-top: 1rem;
+}
+.login-area
+  .content
+  .form-area
+  form
+  .register-input-container
+  .input-wrapper
+  + div {
+  margin-top: 0px;
 }
 .login-area .content .form-area form .input-container .input-wrapper input {
   width: 100%;
@@ -79,10 +98,16 @@
 }
 @media screen and (max-width: 1230px) {
   .login-area .content {
+    padding-top: 4rem;
     grid-template-columns: 1fr;
   }
   .login-area .content > *:first-child {
     display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .register-input-container > * {
+    grid-column: span 2;
   }
 }
 @media screen and (max-width: 450px) {

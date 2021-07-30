@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 .hero-wrapper {
   height: 800px;
   width: 100%;
@@ -68,7 +71,8 @@
   padding: 7rem 0rem;
 }
 .investment-plans .investement-plan-content h1,
-.welcome-area h1 {
+.welcome-area h1,
+.affliates-container .content h1 {
   font-size: 2.6rem;
   text-align: center;
 
@@ -210,6 +214,25 @@
   margin-bottom: 1rem;
 }
 
+.affliates-container {
+  padding: 4rem 0rem;
+}
+.affliates-container .content {
+  text-align: center;
+
+  margin: 0rem auto;
+  border: 2px solid #09a5d1;
+  padding: 4rem 3rem;
+  border-radius: 10px;
+}
+.affliates-container .content h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.affliates-container .content p {
+  line-height: 2rem;
+  color: rgb(104, 119, 141);
+}
 /* youtube-video-container */
 .video-container .content {
   padding: 7rem 0rem;
